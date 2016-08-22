@@ -5,7 +5,7 @@ Lex processes ordered text using Markov chains and multi-lexeme walks. Currently
 
 - Download the repository, then save any text file as `source.txt`.
 - Run `gen.py` to generate weight values.
-- Run `main.py` to generate text
+- Run `main.py > file.out` to generate text
 
 For more info see the [wiki](https://github.com/incogn/Lex/wiki/Lex)
 
