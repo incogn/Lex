@@ -1,6 +1,6 @@
 import re
 import json
-# Maximum word chain detection length. See: https://github.com/incogn/Lex/Wiki
+# Maximum word chain detection length. See: https://github.com/incogn/Lex/Wiki/Methods
 MAX_LENGTH = 3
 # Count proceeding occurences of words
 def addLex(lex, nlex):
@@ -11,7 +11,7 @@ def addLex(lex, nlex):
         p[lex][nlex] = 1
     else:
         p[lex][nlex] += 1
-
+MAX_LENGTH += 1
 p, f, = {}, open('source.txt', 'r', encoding='utf-8')
 for line in f:
     # Remove quotation marks, for now
@@ -26,12 +26,14 @@ for line in f:
         # Add lexeme patterns up to MAX_LENGTH
         for i in range(0, len(arr) - 1):
             addLex(arr[i], arr[i + 1])
-        for x in range(2, MAX_LENGTH + 1):
+        x = 2
+        while x < MAX_LENGTH and x < len(arr):
             for i in range(0, len(arr) - x):
                 words = []
                 for j in range(i, i + x):
                     words.append(arr[j])
                 addLex(' '.join(words), arr[i + x])
+            x += 1
 # Crunch the probabilities to decimals for faster processing
 for pgroup in p:
     total = 0
