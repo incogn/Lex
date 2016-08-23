@@ -17,9 +17,6 @@ Added basic text processing ability<br>
 Improved output length and quality
 
 ####Future Improvements
-- ~~Make text walking less random~~
 - Multi-sentence walks, for greater overall coherence
-- Adaptation into chatbot LexBot, including
-  - Self-regulating messages with appropriate timing and length
-  - Response recognition and processing capability
-  - Improved text processing methods
+- Response recognition and processing capability
+- Improved text processing methods
