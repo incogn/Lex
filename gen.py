@@ -1,7 +1,7 @@
 import re
 import json
 # Maximum word chain detection length. See: https://github.com/incogn/Lex/Wiki/Methods
-MAX_LENGTH = 3
+MAX_LENGTH = 5
 # Count proceeding occurences of words
 def addLex(lex, nlex):
     global p
