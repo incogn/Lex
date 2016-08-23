@@ -12,7 +12,9 @@ For more info see the [wiki](https://github.com/incogn/Lex/wiki/Lex)
 ### Versions
 
 `v1.0.0`<br>
-Added basic text processing ability
+Added basic text processing ability<br>
+`v1.0.1`<br>
+Improved output length and quality
 
 ####Future Improvements
 - ~~Make text walking less random~~
