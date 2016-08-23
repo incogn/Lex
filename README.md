@@ -15,7 +15,7 @@ For more info see the [wiki](https://github.com/incogn/Lex/wiki/Lex)
 Added basic text processing ability
 
 ####Future Improvements
-- Make text walking less random
+- ~~Make text walking less random~~
 - Multi-sentence walks, for greater overall coherence
 - Adaptation into chatbot LexBot, including
   - Self-regulating messages with appropriate timing and length
